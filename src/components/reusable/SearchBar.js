@@ -30,6 +30,7 @@ const SearchBar = (props) => {
                     onChangeSearchInput(e.target.value)
                 }}
                 onKeyDown={keyDown}
+                value={input}
             />
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search" onClick={() => {
                 onSearch(input)
